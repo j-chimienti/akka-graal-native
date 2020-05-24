@@ -24,7 +24,7 @@ It might take a few minutes to compile.
 ## Running
     
     # MacOS:
-    ./target/graalvm-native-image/akka-graal-native -Djava.library.path=${GRAAL_HOME}/jre/lib
+    ./target/graalvm-native-image/akka-graal-native -Djava.library.path=${GRAALVM_HOME}/jre/lib
     
     # Linux:
     ./target/graalvm-native-image/akka-graal-native -Djava.library.path=${GRAAL_HOME}/jre/lib/amd64

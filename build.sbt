@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "com.github.vmencik" %% "graal-akka-slf4j" % graalAkkaVersion
 
 )
-
+enablePlugins(JavaAppPackaging)
 enablePlugins(GraalVMNativeImagePlugin)
 
 graalVMNativeImageOptions ++= Seq(
@@ -39,3 +39,5 @@ graalVMNativeImageOptions ++= Seq(
   "--no-fallback",
   "--allow-incomplete-classpath"
 )
+
+
